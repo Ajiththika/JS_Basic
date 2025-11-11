@@ -15,22 +15,22 @@ console.log(y);
 //Hoisting
 
 {
-    var x=25;
+    let x = 25;
     console.log(x);
 }
 console.log(x);
 
 {
-    let x=25;
+    let x = 25;
     console.log(x);
 }
 console.log(x);
 
 {
-    const x=25;
+    const x = 25;
     console.log(x);
 }
 console.log(x);
 
 console.log(y);
-let y=20;
+let a=20;
