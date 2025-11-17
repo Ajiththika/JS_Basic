@@ -32,4 +32,36 @@ employee.introduce = () => {
 employee.introduce();
 
 //loop through skills array
-employee.skills.forEach(skill => console.log(skill));
+employee.skills.forEach(a => console.log(a)); // a is an index 
+
+// Loop through array to get only keys (indexes)
+employee.skills.forEach((_, index) => {
+  console.log(`Key: ${index}`);
+});
+
+// Loop through array to get only values
+employee.skills.forEach(skill => {
+  console.log(`Value: ${skill}`);
+});
+
+// next class loop itteration 
+
+
+// Arrays
+let students = [
+    { name: "Ajie", score: 85 },
+    { name: "Pooja", score: 92 },
+    { name: "Renu", score: 78 },
+    { name: "Arul", score: 88 },
+];
+
+ // using forEach to create students list  
+students.forEach(b => console.log(b.name));
+
+//map create a new array to change elements //using map
+const score = students.map(b => b.score);
+console.log(score);
+
+// using filter 
+const highscore = students.filter(b => b.score > 80);
+console.log(highscore);
