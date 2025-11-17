@@ -30,3 +30,6 @@ employee.introduce = () => {
   console.log(`Hi. My name is ${employee.name}. I am working in ${employee.department}.`);
 };
 employee.introduce();
+
+//loop through skills array
+employee.skills.forEach(skill => console.log(skill));
