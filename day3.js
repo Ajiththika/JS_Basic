@@ -104,7 +104,7 @@ const Today = new Date();
 console.log("Date:", today.toDateString());
 
 //function
-yearlySalary() {
+yearlySalary();{
   return this.salary*12
 }
 

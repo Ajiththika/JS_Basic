@@ -77,4 +77,42 @@ function displaySum(){
 displaySum();
 
 
+// // Function to calculate total & Extra percentage
+// function totalIncome(salary1, salary2) {
+//   return salary1 + salary2; 
+// }
+// function incomeWithBonus {
+//   let percent = 10; 
+//   return totalIncome + (totalIncome * percent) / 100; 
+// }
+// function displayIncome() {
+//   let basicIncome = totalIncome(50000, 100000); 
+//   let finalIncome = incomeWithBonus(basicIncome); 
+//   console.log("Total Income: " + basicIncome);
+//   console.log("Extra Income: " + finalIncome);
+// }
+// displayIncome();
+
+
+const salary1 = 50000;
+const salary2 = 100000;
+function totalIncome(s1, s2) {
+  return s1 + s2;
+}
+function incomeWithBonus() {
+  const percent = 10;
+  const total = totalIncome(salary1, salary2);        
+  return total + (total * percent) / 100;              
+}
+function displayIncome() {
+  const basicIncome = totalIncome(salary1, salary2);
+  const finalIncome = incomeWithBonus();               
+  console.log("Total Income: " + basicIncome);
+  console.log("Extra Income: " + finalIncome);
+}
+displayIncome();
+
+
+
+
 
