@@ -65,3 +65,7 @@ console.log(score);
 // using filter 
 const highscore = students.filter(b => b.score > 80);
 console.log(highscore);
+
+
+
+
