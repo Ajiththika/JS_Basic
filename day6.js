@@ -13,11 +13,11 @@ students.forEach(b => console.log(b.name));
 const score = students.map(b => b.score);
 console.log(score);
 
-// using filter 
+// using filter - filter the wanted things 
 const highscore = students.filter(b => b.score > 80);
 console.log(highscore);
 
-// using reduce 
+// using reduce - 
 const totalscore = students.reduce((sum, student)=> sum + student.score, 0);
 const avgScore = totalscore / students.length;
 console.log(avgScore);
